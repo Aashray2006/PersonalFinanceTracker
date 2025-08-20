@@ -1,36 +1,96 @@
-# 📝 Simple To-Do List Application (C++)
+💰 Simple Personal Finance Tracker (Python)
+This is a console-based personal finance tracker written in Python. It's designed to help you easily manage and monitor your income and expenses. The application saves your financial data to a file, so your records are preserved between sessions.
 
-This is a basic command-line to-do list manager written in C++. It's a great project for understanding fundamental C++ concepts like classes, objects, file I/O streams, and dynamic memory management. The application allows you to organize your tasks and saves your data for future use.
+⚙️ Key Features
+Transaction Management: Add, view, and track both income and expenses.
 
-## **⚙️ Key Features**
+Data Persistence: All transactions are automatically saved to and loaded from a finance_data.json file.
 
-* **Task Class:** Defines a `Task` as an object with a description and a completion status.
-* **File Persistence:** Tasks are automatically loaded from and saved to a `tasks.txt` file using C++ file streams (`fstream`).
-* **User-Friendly Interface:** A clear menu guides you through adding, viewing, and managing tasks.
-* **Robust Input Handling:** The program handles various user inputs to prevent crashes and ensure a smooth experience.
+Financial Summary: Get a quick overview of your total income, total expenses, and net savings.
 
-## **🚀 How to Run**
+Search & Filter: Find specific transactions by searching for a keyword in the description or by filtering for expenses over a certain amount.
 
-### **Prerequisites**
+Visual Chart: Visualize your monthly spending with a simple ASCII bar chart.
 
-* A C++ compiler (e.g., g++).
+🚀 How to Run
+Prerequisites
+Ensure you have Python 3.x installed on your system.
 
-### **Compilation**
+Execution
+Save the code provided in the previous response into a file named finance_tracker.py.
 
-1.  Navigate to the `src` directory in your terminal.
-2.  Compile the source code using your C++ compiler:
-    ```sh
-    g++ main.cpp -o todo_app
-    ```
+Open your terminal or command prompt.
 
-### **Execution**
+Navigate to the directory where you saved the file.
 
-1.  Run the compiled executable:
-    ```sh
-    ./todo_app
-    ```
-2.  Follow the prompts to interact with the application.
+Run the application using the following command:
 
-## **📋 Sample Output**
+Bash
 
-When you run the application for the first time, it will start with an empty list.
+python finance_tracker.py
+Follow the on-screen menu to interact with the finance tracker.
+
+📋 Sample Output
+When you run the application for the first time, it will load an empty list.
+
+No data file found (finance_data.json). Starting with a new, empty list.
+
+--- Main Menu ---
+1. Add Income
+2. Add Expense
+3. View All Transactions
+4. View Financial Summary
+5. Search & Filter Transactions
+6. View Monthly Expense Chart
+7. Exit
+Enter your choice: 2
+
+--- Add Expense ---
+Enter amount: $50.00
+Enter description: Dinner with friends
+Enter date (YYYY-MM-DD, press Enter for today): 2025-08-15
+Expense added successfully!
+Data saved successfully to finance_data.json
+
+--- Main Menu ---
+1. Add Income
+2. Add Expense
+3. View All Transactions
+4. View Financial Summary
+5. Search & Filter Transactions
+6. View Monthly Expense Chart
+7. Exit
+Enter your choice: 1
+
+--- Add Income ---
+Enter amount: $1500.00
+Enter description: Monthly salary
+Enter date (YYYY-MM-DD, press Enter for today): 2025-08-01
+Income added successfully!
+Data saved successfully to finance_data.json
+
+--- Main Menu ---
+1. Add Income
+2. Add Expense
+3. View All Transactions
+4. View Financial Summary
+5. Search & Filter Transactions
+6. View Monthly Expense Chart
+7. Exit
+Enter your choice: 4
+
+--- Financial Summary ---
+Total Income:  $1500.00
+Total Expenses: $50.00
+Net Savings:   $1450.00
+
+--- Main Menu ---
+1. Add Income
+2. Add Expense
+3. View All Transactions
+4. View Financial Summary
+5. Search & Filter Transactions
+6. View Monthly Expense Chart
+7. Exit
+Enter your choice: 7
+Goodbye!
